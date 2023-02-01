@@ -12,6 +12,7 @@ class CacheWidgetDecorator extends BaseCacheDecorator implements WidgetRepositor
         parent::__construct();
         $this->entityName = 'dashboard.widgets';
         $this->repository = $widgets;
+         $this->cacheTime=60;
     }
 
     /**
